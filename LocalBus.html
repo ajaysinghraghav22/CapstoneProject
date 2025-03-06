@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Bus Ticket</title>
+  <link rel="stylesheet" href="LocalBus.css">
+</head>
+
+<body>
+  <header class="header">
+    <ul>
+        <li><a href="">Bus Ticket</a></li>
+       
+        <li>
+            <a href="#">Train Info</a>
+            <ul>
+                <li><a href="#">Live Train Status</a></li>
+                <li><a href="#">PNR Status</a></li>
+
+            </ul>
+        </li>
+        <li>
+            <a href="#">Passenger Info</a>
+            <ul>
+                <li><a href="#">Seat Availability</a></li>
+                <li><a href="#">Arrival Departure</a></li>
+            </ul>
+        </li>
+    </ul>
+</header>
+  <div class="cont2" id="a">
+    <form action="">
+      <legend>Search by Station</legend>
+      <label for="from">From</label>
+      <input type="text" id="from" placeholder="Enter Station">
+
+      <button type="button" id="exchange-btn">⇅</button>
+
+      <label for="to">To</label>
+      <input type="text" id="to" placeholder="Enter Station">
+
+      <label for="date">Select Date</label>
+      <input type="date" id="date">
+
+      <button type="submit">Check Status</button>
+    </form>
+  </div>
+  <div class="container">
+    <div class="a">
+      <h2>Terms and Conditions</h2>
+      <ul>
+        <li class="li">By using this website, you agree to abide by these terms.</li>
+        <li class="li">The website provides bus alarm alerts and transport search services.</li>
+        <li class="li">Users must ensure correct station details are entered.</li>
+        <li class="li">We do not guarantee real-time tracking accuracy due to external factors.</li>
+        <li class="li">User data is protected and not shared without consent.</li>
+        <li class="li">The platform is not liable for missed alerts due to technical issues.</li>
+      </ul>
+
+      <h2>Why Our Website is the Best</h2>
+      <ul>
+        <li class="li"><strong>Smart Bus Alerts:</strong> Get notified before your station arrives.</li>
+        <li class="li"><strong>Local Transport Search:</strong> Find taxis, e-rickshaws, and rental bikes easily.</li>
+        <li class="li"><strong>Real-Time Tracking:</strong> Integrated with live location services.</li>
+        <li class="li"><strong>Multi-Mode Transport:</strong> Check bus schedules and alternative transport options.</li>
+        <li class="li"><strong>Custom Alerts:</strong> Set vibration, sound, or pop-up notifications.</li>
+      </ul>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <h3>How does the bus alarm alert system work?</h3>
+          <p>Users enter their destination, and the system tracks the bus's location. When the bus is near the station,
+            an alarm notifies the user.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I search for local transport like taxis or e-rickshaws?</h3>
+          <p>Yes, our platform allows users to search for nearby smart and local vehicles.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is the service available in all cities?</h3>
+          <p>Currently, we support select locations, but we are expanding our coverage.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Does the app work offline?</h3>
+          <p>The bus alert requires an internet connection for real-time tracking, but previously searched transport
+            details can be accessed offline.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do I need to create an account to use the service?</h3>
+          <p>No, basic features like searching for transport can be used without an account, but saving preferences
+            requires registration.</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h2>Bus Stop Alert System</h2>
+          <p>Stay updated with live bus tracking and alerts.</p>
+        </div>
+
+        <div class="footer-section">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Live Tracking</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h2>Contact</h2>
+          <p><i class="fas fa-map-marker-alt"></i> New York, USA</p>
+          <p><i class="fas fa-envelope"></i> support@busalert.com</p>
+          <p><i class="fas fa-phone"></i> +1 555 123 4567</p>
+        </div>
+
+        <div class="footer-section">
+          <h2>Follow Us</h2>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Bus Stop Alert System | All Rights Reserved</p>
+  </div>
+  </footer>
+
+  <script>
+    const searchButton = document.querySelector('.search-button');
+
+    searchButton.addEventListener('click', () => {
+
+      console.log('Search button clicked!');
+    });
+    document.querySelectorAll('.faq-item h3').forEach(item => {
+      item.addEventListener('click', () => {
+        let answer = item.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+
+</html>
