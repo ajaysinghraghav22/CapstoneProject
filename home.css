@@ -1,0 +1,285 @@
+ /* Add some basic styling */
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+ }
+
+ .header {
+     background-color: #473939;
+     color: #fff;
+     padding: 20px;
+    
+ }
+
+ .header a:hover {
+     color: orange;
+
+ }
+
+ .header ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+ }
+
+ .header li {
+     position: relative;
+     margin-right: 20px;
+ }
+
+ .header a {
+     color: #fff;
+     text-decoration: none;
+     padding: 10px;
+ }
+
+ .header li:hover>ul {
+     display: block;
+
+ }
+
+ .header ul ul {
+     display: none;
+     position: absolute;
+     background-color: #333;
+     padding: 10px;
+     min-width: 150px;
+ }
+
+ .header ul ul li {
+     margin: 5px 0;
+     width: 100%;
+ }
+
+ .header ul ul a {
+     display: block;
+ }
+
+ main {
+     padding: 20px;
+ }
+
+ footer {
+     background-color: #f2f2f2;
+     padding: 10px;
+     text-align: center;
+ }
+
+ .input-container {
+     display: flex;
+     flex-direction: column;
+ }
+
+ input {
+     padding: 8px;
+     margin-bottom: 5px;
+ }
+
+ input:hover {
+     border: 2px solid rgb(96, 87, 87);
+     border-radius: 0.2rem;
+ }
+
+ label {
+     font-size: 14px;
+     color: gray;
+ }
+
+ main {
+
+     margin: 50px;
+ }
+
+ body {
+     background: linear-gradient(to right, #5f20f2, #73a9de);
+ }
+
+ .cont1 {
+     border: 2px solid gray;
+     margin: 3rem;
+     padding: 2rem;
+     width: 40vw;
+     margin: auto;
+     border-radius: 1.3rem;
+     background-color: #f2f2f2;
+     box-shadow: rgba(113, 227, 227, 0.25) 0px 54px 55px, rgba(100, 208, 238, 0.12) 0px -12px 30px, rgba(36, 37, 70, 0.12) 0px 4px 6px, rgba(34, 34, 36, 0.17) 0px 12px 13px, rgba(34, 32, 32, 0.09) 0px -3px 5px;
+     border: hidden;
+ }
+
+ .cont2 {
+     border: 2px solid gray;
+     margin: 3rem;
+     padding: 2rem;
+     width: 40vw;
+     margin: auto;
+     border-radius: 1.3rem;
+     background-color: #f2f2f2;
+     box-shadow: rgba(90, 98, 107, 0.25) 0px 54px 55px, rgba(100, 208, 238, 0.12) 0px -12px 30px, rgba(36, 37, 70, 0.12) 0px 4px 6px, rgba(34, 34, 36, 0.17) 0px 12px 13px, rgba(34, 32, 32, 0.09) 0px -3px 5px;
+     ;
+     border: hidden;
+ }
+
+ form {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+ button {
+     height: 5vh;
+     width: 30vw;
+     margin: 0.3rem;
+     margin: auto;
+     color: white;
+     background-color: rgb(102, 48, 250);
+     border: hidden;
+     border-radius: 0.3rem;
+ }
+
+ button:hover {
+     background-color: rgb(8, 215, 42);
+     font-weight: bold;
+ }
+
+ .card-group {
+     display: grid;
+     margin: auto;
+     display: grid;
+     width: 60vw;
+     margin: auto;
+     grid-template-columns: repeat(3, 2fr);
+
+ }
+
+ .card {
+     background-color: rgb(252, 250, 250);
+     border: 1px solid black;
+     margin: 1rem;
+     width: 15rem;
+     padding: 1rem;
+     border-radius: 2rem;
+     border: hidden;
+     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+ }
+
+ img {
+     width: 9rem;
+ }
+
+ @media (max-width: 1008px) {
+    .card-group {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 0; 
+    }
+}
+
+@media (max-width: 768px) {
+    .card-group {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 7rem;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-group {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 4rem;
+    }
+
+
+    .footer-section {
+        margin: 10px auto;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px;
+    }
+}
+
+
+ .container {
+     display: grid;
+ }
+
+ .footer-container {
+     display: grid;
+     grid-template-columns: repeat(4, 2fr);
+
+ }
+
+.card {
+    transition:0.3s ease-in-out, 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: rotate(-10deg);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background: #003366;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    height: 50vh;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+}
+
+.footer-section {
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h2 {
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+}
+.footer-section ul li a:hover {
+    
+    color: rgb(246, 238, 3);
+    font-weight: bold;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.footer-bottom {
+    margin-top: 15px;
+    background: #002244;
+    padding: 10px;
+}
